@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--找google fonts去複製字體讓不管哪打開都是這個字體，把程式碼丟在<head>裡-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--可以重複使用的譬如風格，就在head打上並取名
+p{}就可以
+-->
+<style>
+ p{font-family: 'NOTO Sans TC',sans-serif;
+ font-weight: 400;
+
+box-sizing: border-box;
+width: 400px;
+height: 100px;
+/*這是css的註解*/
+ background-color: rgb(197, 222, 222);
+ border:2px solid darkcyan;
+ border-radius:10px;
+ padding:20px 15px;
+
+ overflow:scroll
+ } 
+</style>
+
+</head>
+<!--span是文字、div是區塊，區塊可以設計背景、邊界-->
+<body>
+    <!--預設打斷行是空一格，實際要打斷行是<br>-->
+    <!--行高至少1.5style="line-height:1.5"-->
+    <!--字距style="letter-spacing:1.0"-->
+    <div style="line-height:1.5;">
+        網頁的內容<br>
+        另外一行
+    </div>
+    <span style="font-size:16px;font-weight:bold;">
+        在HTML中使用CSS
+    </span>
+    <br>
+    <!--text-align:justify只會用在中文，左右平均
+        text-align:left置左-->
+    <!--text-decoration:可以是實心solid、虛線dashed-->
+    <!--padding-left:15px 邊框與上下左右文字在框內的距離-->
+    <!--border-bottom width:5px邊框本身的寬度、顏色、風格-->
+    <div style="
+    text-align:justify;
+    text-decoration:dashed 2px;
+    text-decoration-line:underline;
+    background-color: lightseagreen;
+    padding-left:15px
+    padding-right:15px
+
+    border-bottom-width:150px;
+    border-bottom-color:black;
+    border-bottom-style:solid
+
+    ">
+    針對大部分的 HTML 元素，我們都可以設定它的高heigth、寬width、背景background、內距padding、邊框border和邊界margin。
+</div>
+ <!--border-radius:10px圓角-->
+ <!--字超過框時可以 overflow:scrall 在框內捲動-->
+ <div style="
+ font-family: 'NOTO Sans TC',sans-serif;
+ font-weight: 400;
+
+box-sizing: border-box;
+width: 400px;
+height: 100px;
+
+ background-color: rgb(197, 222, 222);
+ border:2px solid darkcyan;
+ border-radius:10px;
+ padding:20px 15px;
+
+ overflow:scroll
+">
+縮寫　上下 左右
+好棒三點了<br>
+美味蟹堡<br>
+好棒三點了<br>
+美味蟹堡<br>
+好棒三點了<br>
+美味蟹堡<br>
+好棒三點了<br>
+美味蟹堡
+</div>
+<div style="
+
+
+">
+好棒三點了<br>
+美味蟹堡
+</div>
+
+<div>
+    <p>
+        好棒三點了<br>
+        美味蟹堡<br>
+        好棒三點了<br>
+        美味蟹堡<br>
+        好棒三點了<br>
+        美味蟹堡<br>
+        好棒三點了<br>
+        美味蟹堡  
+    </p>
+</div>
+</body>
+
+</html>
